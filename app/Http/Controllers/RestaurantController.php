@@ -11,4 +11,8 @@ class RestaurantController extends Controller
     {
         return view('home');
     }
+    function storelist()
+        {
+            return view('storelist');
+        }
 }
