@@ -2,4 +2,29 @@
 
 @section('content')
 <h1>Storelist  page is here</h1>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+      <th scope="col">Created</th>
+      <th scope="col">Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach($data as $item)
+    <tr>
+      <th scope="row">{{$item->id}} </th>
+      <td>{{$item->name}}</td>
+      <td>{{$item->email}}</td>
+      <td>{{$item->address}}</td>
+      <td>{{$item->created}}</td>
+      <td>{{$item->updated}}</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+
 @stop

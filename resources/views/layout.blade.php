@@ -27,7 +27,7 @@
     </div>
   </div>
 </nav>
-  <div>
+  <div class="container">
   @yield('content')
   </div>
     <!-- <footer>Copy rights by HelloDeswanto</footer> -->
