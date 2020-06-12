@@ -19,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','RestaurantController@index');
 Route::get('/storelist','RestaurantController@storelist');
+Route::view('/addstore','addstore');
+Route::post('/addstore','RestaurantController@addstore');

@@ -20,7 +20,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="/storelist">Store List</a>
-      <a class="nav-item nav-link" href="#">Add Store</a>
+      <a class="nav-item nav-link" href="/addstore">Add Store</a>
       <a class="nav-item nav-link" href="#">Search Store</a>
       <a class="nav-item nav-link" href="#">Store Login</a>
       <a class="nav-item nav-link" href="#">Store Register</a>
