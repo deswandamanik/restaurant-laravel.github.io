@@ -17,6 +17,7 @@
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Address</th>
+      <th>Operation</th>
       <!-- <th scope="col">Created</th>
       <th scope="col">Updated</th> -->
     </tr>
@@ -28,6 +29,7 @@
       <td>{{$item->name}}</td>
       <td>{{$item->email}}</td>
       <td>{{$item->address}}</td>
+      <td> <a href="/deletestore/{{$item->id}}"><i class="fa fa-trash"></i></a></td>
       <!-- <td>{{$item->created}}</td>
       <td>{{$item->updated}}</td> -->
     </tr>

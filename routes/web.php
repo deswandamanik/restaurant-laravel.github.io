@@ -21,3 +21,4 @@ Route::get('/','RestaurantController@index');
 Route::get('/storelist','RestaurantController@storelist');
 Route::view('/addstore','addstore');
 Route::post('/addstore','RestaurantController@addstore');
+Route::get('/deletestore/{id}','RestaurantController@deletestore');
