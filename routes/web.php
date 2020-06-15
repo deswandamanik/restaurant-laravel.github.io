@@ -22,3 +22,4 @@ Route::get('/storelist','RestaurantController@storelist');
 Route::view('/addstore','addstore');
 Route::post('/addstore','RestaurantController@addstore');
 Route::get('/deletestore/{id}','RestaurantController@deletestore');
+Route::get('/editstore/{id}','RestaurantController@editstore');

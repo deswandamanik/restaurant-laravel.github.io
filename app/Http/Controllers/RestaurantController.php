@@ -34,4 +34,9 @@ class RestaurantController extends Controller
         Session::flash('status', 'Restaurant has been deleted Successfully');
         return redirect('storelist');
     }
+    function editstore($id)
+    {
+        $data = Restaurant::find($id);
+        return view('editstore',['data'=>$data]);
+    }
 }

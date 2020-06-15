@@ -29,7 +29,10 @@
       <td>{{$item->name}}</td>
       <td>{{$item->email}}</td>
       <td>{{$item->address}}</td>
-      <td> <a href="/deletestore/{{$item->id}}"><i class="fa fa-trash"></i></a></td>
+      <td> 
+      <a href="/deletestore/{{$item->id}}"><i class="fa fa-trash"></i></a>
+      <a href="/editstore/{{$item->id}}"><i class="fa fa-edit"></i></a>
+      </td>
       <!-- <td>{{$item->created}}</td>
       <td>{{$item->updated}}</td> -->
     </tr>
