@@ -50,4 +50,8 @@ class RestaurantController extends Controller
         $req->session()->flash('status', 'Restaurant Update Successfully');
         return redirect('storelist');
     }
+    function registeruser(Request $req)
+    {
+        return $req->input();
+    }
 }

@@ -24,7 +24,7 @@
       <a class="nav-item nav-link" href="/addstore">Add Store</a>
       <a class="nav-item nav-link" href="#">Search Store</a>
       <a class="nav-item nav-link" href="#">Store Login</a>
-      <a class="nav-item nav-link" href="#">Store Register</a>
+      <a class="nav-item nav-link" href="/registeruser">User Register</a>
     </div>
   </div>
 </nav>
