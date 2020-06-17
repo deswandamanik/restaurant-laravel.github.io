@@ -39,4 +39,15 @@ class RestaurantController extends Controller
         $data = Restaurant::find($id);
         return view('editstore',['data'=>$data]);
     }
+    function updatestore(Request $req)
+    {
+        // return $req->input();
+        $fun_restaurant = Restaurant::find($req->id);
+        $fun_restaurant->name=$req->input('name');
+        $fun_restaurant->email=$req->input('email');
+        $fun_restaurant->address=$req->input('address');
+        $fun_restaurant->save();
+        $req->session()->flash('status', 'Restaurant Update Successfully');
+        return redirect('storelist');
+    }
 }

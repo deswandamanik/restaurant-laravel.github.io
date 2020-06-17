@@ -3,9 +3,10 @@
 @section('content')
 <div class="col-sm-6">
 <h1>Edit store</h1>
-<form method="post" action="">
+<form method="post" action="/editstore">
 @csrf
   <div class="form-group">
+  <input type="hidden" name="id" value="{{$data->id}}">
     <label for="exampleInputEmail1">Name</label>
     <input type="text" name="name" class="form-control" value="{{$data->name}}" placeholder="Enter name">
   </div>
